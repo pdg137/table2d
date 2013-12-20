@@ -23,3 +23,8 @@
          (rest (col-count exp-list))
      )
 ))
+
+(defn read-rows
+  ""
+  [s]
+  (map read-row (split s #"\n")))
